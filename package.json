@@ -1,36 +1,38 @@
 {
-  "name": "mapbox-gl-draw-bezier-curve-mode",
-  "version": "1.0.2",
-  "description": "A custom mode for MapboxGL-Draw to draw and edit bezier curves.",
+  "name": "maplibre-gl-draw-bezier-curve-mode",
+  "version": "2.0.0",
+  "description": "A custom mode for Map{libre,box}GL-Draw to draw and edit bezier curves.",
   "keywords": [
     "bezier",
     "curve",
-    "bezier",
-    "curve",
     "mapbox",
-    "mapbox-gl",
-    "mapnpx-gl-draw",
-    "spline"
+    "maplibre"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jeff-Numix/mapbox-gl-draw-bezier-curve-mode.git"
+    "url": "https://github.com/torjh/mapbox-gl-draw-bezier-curve-mode.git"
   },
-  "author": "Jeff Sebrechts",
+  "author": {
+    "name": "joél torres",
+    "email": "joel@joel.fm",
+    "url": "https://joel.fm"
+  },
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@mapbox/mapbox-gl-draw": "1.3.0",
-    "mapbox-gl": "^2.4.0",
+    "maplibre-gl": "^2.1.9",
     "mathjs": "^9.4.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.12",
     "@babel/preset-env": "^7.17.12"
+  },
+  "peerDependencies": {
+    "@mapbox/mapbox-gl-draw": "^1.3.0"
   }
 }
